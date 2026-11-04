@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ebe2d1">
+  <meta name="description" content="御龙入境，以楚帛画为灵感的多模态叙事设计。循一缕云气，探索人物、游龙、华盖与云气构成的数字画境。">
+  <title>御龙入境 — 楚帛画交互叙事</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="refinement.css">
+  <script src="art.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="御龙入境首页"><span class="seal" aria-hidden="true">楚</span><span class="brand-text">御龙入境<small>CHU · SILK NARRATIVES</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav id="main-nav" aria-label="主导航">
+      <a href="#home" class="current" aria-current="location">入境</a>
+      <a href="#journey">叙事行旅</a>
+      <a href="#symbols">符号图谱</a>
+      <a href="#about">关于作品</a>
+      <button class="nav-enter" type="button" data-open="0">进入画境 <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section-anchor" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-line"></span> 楚帛画 · 多模态叙事设计</p>
+        <h1 id="hero-title">御龙<span class="title-row">入<span class="red-char">境</span><i>CHU</i></span></h1>
+        <p class="hero-poem">循一缕云气，入一幅帛画。</p>
+        <p class="hero-description">让帛上的线条有了呼吸，<br>让古老的图像，成为一段可参与的行旅。</p>
+        <div class="hero-actions"><button class="button primary" type="button" data-open="0">开启行旅 <span aria-hidden="true">↗</span></button><a class="text-link" href="#symbols">先读画中符号 <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-art-wrap"><canvas id="hero-art" aria-label="当代线描演绎：人物立于游龙之上，华盖、飘带、游鱼与云气交织" role="img"></canvas><span class="art-annotation">以线为引，御龙而行。</span><span class="art-seal" aria-hidden="true">帛上<br>有境</span></div>
+      <div class="hero-bottom"><a href="#journey" class="scroll-link">向下，展开行旅 <span aria-hidden="true">↓</span></a><span>源于《人物御龙图》的当代设计演绎</span><span class="folio">序 / PROLOGUE</span></div>
+    </section>
+
+    <section class="intro section-container" aria-labelledby="intro-title">
+      <div><p class="eyebrow muted">THE IDEA / 创作缘起</p><h2 id="intro-title">一幅静默的帛画，<br>一场流动的<span class="red-char">相遇。</span></h2></div>
+      <div class="intro-copy"><p>人物、游龙、华盖与游鱼，凝结在同一个画面里。线条的转折、形态的呼应，留下了关于行进与想象的空间。</p><p>《御龙入境》从这些视觉关系出发，以动态、声音与交互重新组织观看的过程。你可以停驻、辨认，也可以循着云气，走进画面。</p><a class="text-link" href="#about">了解设计思路 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="journey" class="journey section-anchor" aria-labelledby="journey-title">
+      <div class="section-container">
+        <div class="section-heading"><div><p class="eyebrow">THE JOURNEY / 叙事行旅</p><h2 id="journey-title">从观画，到<span class="red-char">入画。</span></h2></div><p class="heading-note">三个篇章，三种观看的距离。<br>选择任一篇章，进入视听体验。</p></div>
+        <div class="chapter-list">
+          <button class="chapter" type="button" data-open="0"><div class="chapter-art"><canvas data-chapter-art="0" role="img" aria-label="观画识符篇章画面"></canvas><span class="chapter-art-label">观其形</span></div><div class="chapter-info"><span class="chapter-number">壹 <small>01</small></span><h3>观画识符</h3><p>从整体到局部，辨认画中角色，<br>寻找线条之间的联系。</p><span class="chapter-link">进入篇章 <span aria-hidden="true">↗</span></span></div></button>
+          <button class="chapter" type="button" data-open="1"><div class="chapter-art red-art"><canvas data-chapter-art="1" role="img" aria-label="御龙而行篇章画面"></canvas><span class="chapter-art-label">循其势</span></div><div class="chapter-info"><span class="chapter-number">贰 <small>02</small></span><h3>御龙而行</h3><p>推动行旅的进程，感受云气流转，<br>让画面与声音随之展开。</p><span class="chapter-link">进入篇章 <span aria-hidden="true">↗</span></span></div></button>
+          <button class="chapter" type="button" data-open="2"><div class="chapter-art"><canvas data-chapter-art="2" role="img" aria-label="归于帛上篇章画面"></canvas><span class="chapter-art-label">会其意</span></div><div class="chapter-info"><span class="chapter-number">叁 <small>03</small></span><h3>归于帛上</h3><p>让行旅回到画面，重新观看<br>人物与万象共同构成的一瞬。</p><span class="chapter-link">进入篇章 <span aria-hidden="true">↗</span></span></div></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="symbols" class="symbols section-container section-anchor" aria-labelledby="symbols-title">
+      <div class="section-heading"><div><p class="eyebrow muted">VISUAL ATLAS / 符号图谱</p><h2 id="symbols-title">循形，<span class="red-char">读意。</span></h2></div><p class="heading-note">从画中的一个细节，<br>读懂设计的一种语言。</p></div>
+      <div class="atlas">
+        <div class="atlas-menu" role="tablist" aria-label="视觉符号" aria-orientation="vertical">
+          <button type="button" id="tab-dragon" role="tab" aria-selected="true" aria-controls="symbol-panel" data-symbol="dragon"><small>01</small><span>游龙</span><i aria-hidden="true">↗</i></button>
+          <button type="button" id="tab-person" role="tab" aria-selected="false" aria-controls="symbol-panel" tabindex="-1" data-symbol="person"><small>02</small><span>人物</span><i aria-hidden="true">↗</i></button>
+          <button type="button" id="tab-canopy" role="tab" aria-selected="false" aria-controls="symbol-panel" tabindex="-1" data-symbol="canopy"><small>03</small><span>华盖</span><i aria-hidden="true">↗</i></button>
+          <button type="button" id="tab-cloud" role="tab" aria-selected="false" aria-controls="symbol-panel" tabindex="-1" data-symbol="cloud"><small>04</small><span>云气</span><i aria-hidden="true">↗</i></button>
+        </div>
+        <div class="symbol-panel" id="symbol-panel" role="tabpanel" aria-labelledby="tab-dragon">
+          <div class="symbol-art"><canvas id="symbol-art" role="img" aria-label="游龙的线描设计示意"></canvas><span class="symbol-art-caption">形态提取 · 当代演绎</span></div>
+          <div class="symbol-copy" aria-live="polite"><p class="eyebrow muted" id="symbol-en">DRAGON / 流动的线</p><h3 id="symbol-title">游龙</h3><p id="symbol-description">绵延起伏的躯体，将人物与行进方向联系起来。曲线的舒展与回转，是整个动态场景的视觉骨架。</p><dl><div><dt>视觉特征</dt><dd id="symbol-shape">连续曲线 / 伸展形态</dd></div><div><dt>动态转译</dt><dd id="symbol-motion">路径行进 / 节奏起伏</dd></div></dl><button class="text-link" type="button" id="explore-symbol">在画境中寻找 <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="invitation" aria-labelledby="invitation-title"><span class="invitation-ring" aria-hidden="true"></span><p class="eyebrow">LOOK · LISTEN · PARTICIPATE</p><h2 id="invitation-title">画外的你，<br>也是行旅的一部分。</h2><button class="button light-button" type="button" data-open="1">进入交互叙事 <span aria-hidden="true">↗</span></button><p>建议开启声音，感受画面与节奏的相互回应。</p></section>
+
+    <section id="about" class="about section-container section-anchor" aria-labelledby="about-title">
+      <div class="about-title"><p class="eyebrow muted">ABOUT THE WORK / 关于作品</p><h2 id="about-title">让古老的线条，<br>在当下<span class="red-char">继续叙事。</span></h2></div>
+      <div class="about-content"><p class="about-lead">数字人文视域下楚帛画礼乐符号的多模态叙事设计研究</p><p>本作品以楚帛画图像为研究线索，探索视觉符号如何经过形态提取、动态设计与声音组织，转化为可参与的叙事体验。</p><div class="about-method"><div><span>形</span><h3>视觉提取</h3><p>从人物、游龙与华盖出发，建立线条、形态和构图关系。</p></div><div><span>声</span><h3>视听转译</h3><p>以运动节奏与声音反馈，回应画面中的流动感。</p></div><div><span>境</span><h3>交互叙事</h3><p>将观看的顺序与停留的时间，交给参与者。</p></div></div><p class="art-note">创作说明：本站图形、动态与合成声音均为当代设计演绎，不作为文物、古代仪式或古乐的复原结论。</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-title" href="#home">御龙入境 <span>↑</span></a><div><p>楚帛画交互叙事 · 艺术设计毕业作品概念站</p><p>帛上有境 · 以线为引</p></div><span>CHU · SILK NARRATIVES</span></footer>
+
+  <dialog class="experience" id="experience" aria-labelledby="experience-title">
+    <div class="experience-shell">
+      <header class="experience-header"><span class="experience-brand"><span class="seal small-seal" aria-hidden="true">楚</span> 御龙入境</span><div><button id="audio-toggle" type="button" aria-pressed="false">声景：关闭</button><button id="close-experience" type="button" aria-label="关闭画境，返回网站">关闭 <span aria-hidden="true">×</span></button></div></header>
+      <div class="experience-stage"><canvas id="experience-art" role="img" aria-label="御龙入境交互画面"></canvas><div class="experience-heading"><span id="experience-index">壹 / 观其形</span><h2 id="experience-title">观画识符</h2><p id="experience-description">点选下方符号，寻找画面中的视觉联系。</p></div><span class="experience-aside">当代叙事演绎</span></div>
+      <div class="experience-controls"><div class="experience-symbols" aria-label="点选画中符号"><button type="button" data-experience-symbol="dragon" aria-pressed="true">游龙</button><button type="button" data-experience-symbol="person" aria-pressed="false">人物</button><button type="button" data-experience-symbol="canopy" aria-pressed="false">华盖</button><button type="button" data-experience-symbol="cloud" aria-pressed="false">云气</button></div><p id="experience-detail" aria-live="polite">游龙 · 以连续曲线引导行进方向。</p><div class="journey-slider"><label for="journey-progress">行旅进程 <output id="journey-value" for="journey-progress">0%</output></label><input type="range" id="journey-progress" min="0" max="100" value="0" aria-valuetext="行旅进程0%"><button type="button" id="play-journey" aria-pressed="false">播放行旅 <span aria-hidden="true">▷</span></button></div></div>
+      <footer class="experience-footer"><div aria-label="切换篇章"><button type="button" data-experience-scene="0" aria-pressed="true">壹 · 观画识符</button><button type="button" data-experience-scene="1" aria-pressed="false">贰 · 御龙而行</button><button type="button" data-experience-scene="2" aria-pressed="false">叁 · 归于帛上</button></div><span id="audio-note" role="status">声音由体验操作触发</span></footer>
+    </div>
+  </dialog>
+</body>
+</html>
