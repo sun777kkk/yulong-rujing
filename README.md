@@ -1,50 +1,26 @@
-# 御龙入境 · Chu Silk Narratives
+# 帛间万象 · The Universe on Silk
 
-以楚帛画《人物御龙图》为灵感的交互叙事网站，结合当代图形、动态与合成声景，呈现“观画识符—御龙而行—归于帛上”三个篇章。
+以用户提供的 T 形帛画三界图形与中期展板为内容基础的毕业设计展示网站。
 
-## 打开网站
+在线地址：https://sun777kkk.github.io/yulong-rujing/
 
-双击根目录的 `index.html` 即可离线体验。样式、绘图与交互已经内置在入口文件中，不依赖外部CDN或网络服务。
+## 新版内容
+- 天上、人间、地下三界导览：3张整体 SVG、13组局部 SVG。
+- 符号图鉴：层级筛选、关键词搜索、形态观察与设计转译说明。
+- 大图细读：1—3倍放大、整体及局部 SVG 下载、上一张与下一张。
+- 设计转译过程、网页色彩系统、中期展板原图预览和下载。
+- 电脑与手机适配、键盘导航、焦点恢复、减少动态偏好。
 
-也可在安装Python的电脑上运行：
+## 本地打开
+保持 index.html、styles.css、app.js、silk-data.js 与 assets 文件夹的相对位置。双击 index.html 即可离线浏览；或运行 python serve.py 通过本地服务器打开。
 
-```sh
-python serve.py
-```
+## 更新图片与内容
+- 图形资源：assets/silk/ 中的 SVG，英文文件名与 silk-data.js 的 asset 字段对应。
+- 替换现有图片：用同名 SVG 覆盖对应文件，提交到 main 后等待 GitHub Pages 发布。
+- 新增图形：上传 SVG 并在 silk-data.js 的 symbols 数组中添加项目；图鉴数量与导览统计应同步修改。
+- 展板：替换 assets/silk/exhibition-board.jpg，保持同名即可更新。
+- 页面结构：编辑 src/index.template.html 后运行 python build.py；样式在 styles.css，交互在 app.js。
+- 页面没有服务器上传后台。图片更新通过 GitHub 仓库维护；访客本地预览不等于网站发布。
 
-然后访问 `http://127.0.0.1:8765/`。
-
-## 功能
-
-- 三个叙事篇章与四类视觉符号探索。
-- 行旅进度拖动、播放与暂停。
-- 由观众主动开启的合成声景。
-- 电脑与手机布局、键盘导航和Escape关闭体验。
-
-## 编辑源码
-
-| 文件 | 用途 |
-| --- | --- |
-| `src/index.template.html` | 页面结构模板 |
-| `styles.css` | 基础样式与响应式布局 |
-| `refinement.css` | 视觉深化样式 |
-| `art.js` | 图形绘制 |
-| `app.js` | 交互与声音 |
-| `build.py` | 生成可独立打开的完整网页 |
-| `serve.py` | 本机预览服务器 |
-
-修改源文件后运行：
-
-```sh
-python build.py
-```
-
-将更新后的 `index.html` 一并提交到仓库。
-
-## GitHub Pages
-
-静态网站入口为仓库根目录的 `index.html`。在仓库 Settings → Pages 中选择从 `main` 分支的 `/ (root)` 发布即可。
-
-## 创作说明
-
-本项目中的图形、动态、声音及文化叙事均为当代设计演绎，不作为文物、古代仪式或古乐的复原结论。
+## 内容说明
+图形命名沿用用户素材，网页形态说明依据可见图形组织，当代设计转译与文物事实分别表述。图形为设计提取与演绎，非文物复原。多色应用成果以用户中期展板为准。旧版 art.js、refinement.css 保留作历史源码参考，新版入口不加载。
