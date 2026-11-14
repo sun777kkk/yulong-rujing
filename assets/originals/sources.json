@@ -1,0 +1,20 @@
+[
+  {
+    "id": "t-banner",
+    "page": "https://artsandculture.google.com/asset/t-shaped-painting-on-silk/gAHqReEjqoLl5w?hl=zh-cn",
+    "image": "https://lh3.googleusercontent.com/ci/AL18g_TtQ-0h3IXVM9PLSxNXepfR-7iwcfspSWAdWJv8KGQZGlveIFaMNq5Wi-9Qc_UA2X8R3557BQ",
+    "bytes": 33377
+  },
+  {
+    "id": "dragon",
+    "page": "https://artsandculture.google.com/asset/silk-painting-of-man-riding-on-dragon-unknown/5gGOlEh16uokdA?hl=zh-cn",
+    "image": "https://lh3.googleusercontent.com/ci/AL18g_TJ7lULq_I74D2cCsmfOhytddwt91IEp3BPgrI4ZHhWOo-RHSYay2WA3OXutPLlpxbeGhB-0qs",
+    "bytes": 81593
+  },
+  {
+    "id": "phoenix",
+    "page": "https://artsandculture.google.com/asset/silk-painting-featuring-figure-dragon-and-phoenix-unknown/HwG6Zd5DLqw31Q?hl=zh-cn",
+    "image": "https://lh3.googleusercontent.com/ci/AL18g_T5rXszSRipKhy4lu81vQJUt2sSbGL9lsyZ7AHFEmKtiG-GPmQLO-zBp5N6eSaOnwEBnB85F7s",
+    "bytes": 90522
+  }
+]
