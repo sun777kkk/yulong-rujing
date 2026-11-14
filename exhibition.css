@@ -21,3 +21,10 @@ body{font-size:14px;background-color:var(--paper)}.wrap{width:min(1280px,86%)}.e
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.artifact-front:hover{transform:translateX(-50%) rotate(3deg)}.original-item{transition:none}}
 .hero-scenes button,.hero-paging button,.gallery-expand button{min-height:44px}.curator-note summary{min-height:44px;align-items:center}
 .closing{position:relative;overflow:hidden}.editorial-header .nav a{font-family:var(--sans);font-size:14px;letter-spacing:1.5px}.editorial-hero .hero-description{font-family:var(--sans);font-size:14px;color:#d1d1b9;line-height:2.2}.prologue-body,.original-label p,.life-copy>p{color:#6b6656}.editorial-hero .hero-quiet-link{color:#cfd0af}.editorial-prologue .curator-note>div{color:#625e50}.originals-note{color:#766d58}.realm-info>p{color:#bdc2a5}@media(max-width:800px){.editorial-hero .hero-description{font-size:13px}}
+
+/* Keep the Chinese wordmark on one centered row, with its subtitle below. */
+.editorial-header .brand{display:grid;grid-template-columns:24px max-content;column-gap:9px;row-gap:8px;align-items:center;justify-content:center;text-align:center}
+.editorial-header .brand-mark,.editorial-header .brand-name{font:24px/1 var(--serif);letter-spacing:3px;color:#fff5d7}
+.editorial-header .brand-mark{width:24px;height:24px;padding:0;border:0;letter-spacing:0}
+.editorial-header .brand small.brand-subtitle{grid-column:1/-1;justify-self:center;margin:0;font:6px/1 Georgia,serif;letter-spacing:1.1px;color:#ead5a5;white-space:nowrap}
+@media(max-width:800px){.editorial-header .brand{left:50%;top:21px;transform:translateX(-50%);grid-template-columns:22px max-content;column-gap:7px;row-gap:7px}.editorial-header .brand-mark,.editorial-header .brand-name{font-size:22px}.editorial-header .brand-mark{height:22px;width:22px}.editorial-header .brand small.brand-subtitle{font-size:5px;letter-spacing:1.1px}}
