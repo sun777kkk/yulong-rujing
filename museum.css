@@ -15,3 +15,11 @@ dialog{background:#ede6d6;color:#485440;box-shadow:0 35px 100px #0004}dialog::ba
 .prologue-copy{color:#776b54}.section-head>p,.museum-section-head>p{color:#7c6d52}.realm-info>p{color:#75684f}.detail-copy #detail-analysis p{color:#746348}.detail-note{color:#88704f}
 @media(min-width:801px){.gate-heaven>img{top:146px;height:246px;left:9%;width:84%}.gate-heaven h3{z-index:4}.gate-heaven .gate-footer{z-index:4}}
 @media(min-width:801px) and (max-width:1180px){.gate-heaven>img{top:144px;height:218px}}
+
+/* Original brush-lettering supplied by the designer; preserve all seven characters. */
+.museum-hero h1.calligraphy-title{width:min(41vw,610px);max-width:none;line-height:1;margin:30px 0 28px;letter-spacing:0;white-space:normal}
+.calligraphy-title img{display:block;width:100%;height:auto;max-width:none}
+@media(max-width:1180px) and (min-width:801px){.museum-hero h1.calligraphy-title{width:38vw;margin-block:29px}}
+@media(max-width:800px){.museum-hero h1.calligraphy-title{width:100%;max-width:580px;margin:28px 0 25px}}
+@media(max-width:420px){.museum-hero h1.calligraphy-title{width:100%;margin:25px 0 23px}}
+
