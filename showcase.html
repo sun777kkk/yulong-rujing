@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#263e31">
+  <meta name="description" content="楚帛数字博物馆简易展示页：从原作观看、文化阅读到三界图录，了解楚帛万象的设计与体验。">
+  <meta property="og:title" content="楚帛万象 · 网站展示">
+  <meta property="og:description" content="一帛，见天地万象。从帛画出发，走近楚人的世界。">
+  <meta property="og:image" content="https://sun777kkk.github.io/yulong-rujing/assets/showcase/desktop.png">
+  <title>楚帛万象 · 网站展示</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--paper:#f2eee4;--ink:#263e31;--gold:#94703b;--muted:#6d7467;--line:#d6d0be;--serif:"Noto Serif SC","Songti SC","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;color-scheme:light;scroll-behavior:smooth}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper) url('assets/silk/paper-grain.svg');color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--gold);outline-offset:6px}img{display:block;max-width:100%}p,h1,h2,h3,figure{margin:0}.wrap{width:min(1180px,88%);margin-inline:auto}
+    .topbar{height:92px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}.wordmark{font:24px/1.3 var(--serif);letter-spacing:3px}.wordmark small{display:block;font:7px/1.5 Georgia,serif;letter-spacing:1.65px;color:var(--gold);margin-top:7px}.toplink{font-size:12px;color:#5e665b;display:flex;align-items:center;gap:22px}.toplink span{font-size:20px}
+    .hero{padding:62px 0 59px;display:grid;grid-template-columns:.76fr 1.24fr;align-items:center;gap:56px}.kicker{font-size:10px;letter-spacing:2px;color:var(--gold);display:flex;align-items:center;gap:12px}.kicker:before{content:"";display:block;width:24px;height:1px;background:var(--gold)}h1{font:56px/1.35 var(--serif);letter-spacing:3px;margin-top:25px;font-weight:400}h1 em{color:var(--gold);font-style:normal}.intro{font-size:14px;line-height:2.05;color:var(--muted);max-width:365px;margin-top:25px}.primary{display:inline-flex;align-items:center;justify-content:space-between;gap:47px;padding:16px 23px;background:var(--ink);color:#f5edda;font-size:13px;letter-spacing:2px;margin-top:29px;border:1px solid var(--ink);transition:background .2s}.primary span{font-size:20px;line-height:1}.primary:hover{background:#405b46}.project-note{font-size:10px;line-height:1.8;letter-spacing:1px;margin-top:19px;color:#888774}
+    .preview{position:relative;padding:7px 24px 60px 0}.desktop{overflow:hidden;border:1px solid #b8b296;border-radius:10px;box-shadow:0 20px 45px #283e3020;background:var(--ink)}.browser{height:24px;background:#ddd5c0;display:flex;align-items:center;gap:4px;padding-left:10px;position:relative}.browser i{width:4px;height:4px;border-radius:50%;background:#9d9581}.browser small{position:absolute;inset:0;display:grid;place-items:center;font:6px Georgia,serif;letter-spacing:1.8px;color:#6f705f}.desktop img{width:100%;height:auto}.phone{position:absolute;right:-6px;bottom:7px;width:132px;border:5px solid #22382c;border-radius:22px;overflow:hidden;background:#22382c;box-shadow:0 16px 27px #102a2636;outline:1px solid #a69b7c}.phone img{width:100%;height:auto;border-radius:16px}.phone:after{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:27px;height:4px;background:#15281e;border-radius:5px}.preview-caption{position:absolute;bottom:20px;left:0;font-size:9px;letter-spacing:1.6px;color:#7b816e}.preview-link{display:block}.preview-link:hover .desktop{box-shadow:0 22px 48px #283e3030}
+    .highlights{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:31px 0 34px;display:grid;grid-template-columns:repeat(3,1fr)}.highlight{padding:0 29px;border-left:1px solid var(--line)}.highlight:first-child{padding-left:0;border-left:0}.highlight:last-child{padding-right:0}.number{font:10px Georgia,serif;letter-spacing:1.6px;color:var(--gold);display:block;margin-bottom:12px}.highlight h2{font:23px/1.5 var(--serif);letter-spacing:1px;font-weight:400;display:flex;align-items:center;justify-content:space-between;gap:15px}.highlight h2 span{font:18px var(--sans);color:#8d835f;transition:transform .2s}.highlight:hover h2 span{transform:translate(2px,-2px)}.highlight p{font-size:12px;line-height:1.9;color:var(--muted);margin-top:10px;max-width:300px}.period-note{font-size:10px;color:#878272;line-height:1.9;margin-top:16px}
+    .visit{margin-top:32px;background:var(--ink);padding:29px 35px;display:flex;align-items:center;justify-content:space-between;gap:40px;position:relative;isolation:isolate;overflow:hidden}.visit:after{content:"";position:absolute;width:270px;height:230px;right:130px;top:-35px;background:url('assets/silk/earth-02.svg') center/contain no-repeat;filter:brightness(0) invert(1);opacity:.035;z-index:-1}.visit .eyebrow{font:8px Georgia,serif;letter-spacing:2px;color:#acb392}.visit h2{font:27px/1.6 var(--serif);letter-spacing:1px;color:#ebdfc3;margin-top:8px;font-weight:400}.visit-link{display:inline-flex;gap:20px;align-items:center;font-size:11px;letter-spacing:1px;color:#d0c2a0;border-bottom:1px solid #b8aa7c70;padding:9px 0 5px;margin-top:6px}.visit-link span{font-size:17px}.qr{flex-shrink:0;display:flex;align-items:center;gap:17px;color:#d0d3b8}.qr img{width:92px;height:92px;background:white;padding:5px}.qr p{font-size:11px;line-height:1.9;letter-spacing:1px}.qr small{display:block;font:7px/1.7 Georgia,serif;color:#94a385;letter-spacing:1px;margin-top:7px}
+    footer{padding:25px 0 30px;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:#838773;letter-spacing:.5px;line-height:1.9}footer a{color:var(--gold)}
+    @media(min-width:1440px){.hero{gap:66px}.preview{padding-right:26px}.phone{width:145px;right:-7px}}
+    @media(max-width:1000px){.hero{gap:30px;grid-template-columns:.8fr 1.2fr;padding-top:50px}h1{font-size:45px}.intro{font-size:13px}.phone{width:108px;right:-5px}.preview{padding-right:18px;padding-bottom:55px}.preview-caption{font-size:8px}.highlight{padding-inline:20px}.highlight h2{font-size:21px}.highlight p{font-size:11px}.visit h2{font-size:24px}.qr{gap:12px}.qr img{width:84px;height:84px}}
+    @media(max-width:700px){.wrap{width:88%}.topbar{height:83px;gap:15px}.wordmark{font-size:22px}.wordmark small{font-size:6px;letter-spacing:1.5px}.toplink{font-size:10px;gap:12px}.toplink span{font-size:18px}.hero{grid-template-columns:1fr;padding:38px 0 30px;gap:34px}.kicker{font-size:9px;letter-spacing:1.5px}h1{font-size:44px;margin-top:19px;line-height:1.4;letter-spacing:2px}h1 br{display:initial}.intro{font-size:13px;line-height:2;margin-top:18px;max-width:450px}.primary{margin-top:22px;padding:15px 21px;font-size:12px;gap:43px}.project-note{font-size:9px;margin-top:15px}.preview{padding:0 17px 55px 0}.desktop{border-radius:7px}.browser{height:18px}.browser small{font-size:4px;letter-spacing:1px}.browser i{width:3px;height:3px}.phone{width:104px;right:-3px;bottom:4px;border-width:4px;border-radius:16px}.phone img{border-radius:11px}.phone:after{top:6px;width:22px;height:3px}.preview-caption{bottom:16px;font-size:7px;letter-spacing:.9px;max-width:210px;line-height:1.8}.highlights{grid-template-columns:1fr;padding:0}.highlight,.highlight:first-child,.highlight:last-child{border:0;border-top:1px solid var(--line);padding:22px 0;display:grid;grid-template-columns:31px 1fr;column-gap:8px;align-items:start}.highlight:first-child{border-top:0}.number{margin-top:8px;grid-row:1/3;font-size:9px}.highlight h2{font-size:23px;letter-spacing:1px}.highlight p{font-size:12px;margin-top:8px;max-width:100%;grid-column:2;line-height:1.9}.period-note{font-size:9px;line-height:1.9;margin-top:14px}.visit{margin-top:26px;padding:25px 23px;display:block}.visit h2{font-size:24px;line-height:1.7;margin-top:10px}.visit-link{font-size:11px;margin-top:8px}.qr{margin-top:23px;padding-top:22px;border-top:1px solid #b0b59638;gap:18px}.qr img{width:82px;height:82px}.qr p{font-size:12px}.qr small{font-size:7px}.visit:after{right:-60px;top:0}footer{display:block;padding:23px 0 28px;font-size:9px}footer>span+span{display:block;margin-top:7px}}
+    @media(max-width:370px){h1{font-size:39px}.toplink{font-size:9px;gap:8px}.wordmark{font-size:20px}.phone{width:96px}.preview-caption{max-width:175px}.visit h2{font-size:21px}}
+    @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*{transition:none!important}}
+    .phone:after{display:none}
+    @media print{body{background:var(--paper)}.wrap{width:92%}.hero{padding-block:30px}.primary,.visit{-webkit-print-color-adjust:exact;print-color-adjust:exact}footer{padding-bottom:0}}
+  </style>
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="wordmark" href="./" aria-label="进入楚帛数字博物馆">楚帛万象<small>THE UNIVERSE ON SILK</small></a>
+    <a class="toplink" href="./">进入完整网站 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="kicker">楚帛数字博物馆 / 网站展示</p>
+        <h1 id="title">一帛，见<br><em>天地万象。</em></h1>
+        <p class="intro">以帛画为入口，走近楚人的衣冠、礼序与龙凤想象。连接原作细读与原创图形，让古老图像成为可以观看、阅读和探索的文化体验。</p>
+        <a class="primary" href="./">进入网站 <span aria-hidden="true">↗</span></a>
+        <p class="project-note">艺术设计毕业创作 · 视觉传达设计</p>
+      </div>
+      <div class="preview">
+        <a class="preview-link" href="./" aria-label="打开完整网站，探索楚帛文化">
+          <figure class="desktop"><div class="browser" aria-hidden="true"><i></i><i></i><i></i><small>CHU SILK MUSEUM</small></div><img src="assets/showcase/desktop.png" width="1440" height="1000" alt="楚帛数字博物馆电脑首页预览，展示书法标题与三件帛画原作" fetchpriority="high"></figure>
+          <figure class="phone"><img src="assets/showcase/mobile.png" width="390" height="844" alt="网站在手机上的首页预览"></figure>
+        </a>
+        <p class="preview-caption">真实网页预览 / 电脑与手机均可浏览</p>
+      </div>
+    </section>
+    <section class="highlights" aria-label="网站内容亮点">
+      <a class="highlight" href="./#originals"><span class="number">01</span><h2>近观帛画原作 <span aria-hidden="true">↗</span></h2><p>观看人物御龙、人物龙凤与 T 形帛画，放大阅读笔触、形态与构图。</p></a>
+      <a class="highlight" href="./#chu-life"><span class="number">02</span><h2>读见楚人生活 <span aria-hidden="true">↗</span></h2><p>从衣冠、器物、龙凤和民俗图式四个主题，带着问题认识画中世界。</p></a>
+      <a class="highlight" href="./#realms"><span class="number">03</span><h2>循象漫游三界 <span aria-hidden="true">↗</span></h2><p>进入天上、人间、地下，探索十三组原创图形，支持筛选、细读与下载。</p></a>
+    </section>
+    <p class="period-note">以战国楚帛画为起点，将西汉 T 形帛画作为比较线索；孔雀青图形为当代设计提取。</p>
+    <section class="visit" aria-labelledby="visit-title">
+      <div><p class="eyebrow">LOOK CLOSER. DISCOVER MORE.</p><h2 id="visit-title">从帛画出发，走近楚人的世界。</h2><a class="visit-link" href="./">开始这段文化旅程 <span aria-hidden="true">→</span></a></div>
+      <a class="qr" href="./" aria-label="进入完整网站，也可使用二维码扫码访问"><img src="assets/showcase/visit-qr.svg" width="92" height="92" alt="楚帛数字博物馆访问二维码"><p>扫码进入<br>完整网站<small>SCAN TO EXPLORE</small></p></a>
+    </section>
+  </main>
+  <footer class="wrap"><span>楚帛万象 · 楚帛数字博物馆</span><span>公开访问地址：<a href="https://sun777kkk.github.io/yulong-rujing/">sun777kkk.github.io/yulong-rujing/</a></span></footer>
+</body>
+</html>
