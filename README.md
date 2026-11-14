@@ -36,7 +36,7 @@
 原仓库：https://github.com/sun777kkk/yulong-rujing
 原网站：https://sun777kkk.github.io/yulong-rujing/
 
-此版已在本地完成。线上网址仍是旧版本，需要恢复 GitHub 授权后推送 main，再等待 Pages 部署。
+发布方式：将 main 分支推送到原仓库，GitHub Pages 从仓库根目录构建。实际发布状态以仓库 Pages 部署记录为准。
 
 ## 内容边界
 
