@@ -3,13 +3,17 @@
     "file": "heaven-01.svg",
     "original": "01_天上整体_孔雀青单色.svg",
     "viewBox": "0 0 2048 1639",
-    "size": 1511887
+    "size": 951240,
+    "sha256": "f7a2f48ea80d59589c6acdd624b1e287a1d900f84aba9cb2f2749f80b7e82377",
+    "updated": "2026-11-18"
   },
   {
     "file": "heaven-02.svg",
     "original": "02_天门门吏与守护神豹_孔雀青单色.svg",
     "viewBox": "0 0 2048 1156",
-    "size": 304464
+    "size": 278588,
+    "sha256": "de52f11b1a417052ac6964421f4e0c48db6c8dfc6276d30bf824610b9948f08c",
+    "updated": "2026-11-18"
   },
   {
     "file": "heaven-03.svg",
@@ -27,7 +31,9 @@
     "file": "heaven-05.svg",
     "original": "05_日中金乌与扶桑九日_孔雀青单色.svg",
     "viewBox": "0 0 1224 2048",
-    "size": 357990
+    "size": 150604,
+    "sha256": "e67004b7d7cc0481406383d53e9f878232f1443a05cbcd7849e5452554cbc888",
+    "updated": "2026-11-18"
   },
   {
     "file": "heaven-06.svg",

@@ -7,7 +7,7 @@ window.SILK_DATA={
       "num": "01",
       "title": "仰观天象，神游其间。",
       "desc": "日月、飞龙、神鸟与天门，组成向上展开的图像想象。从整体构图出发，逐一阅读六组局部图形。",
-      "asset": "heaven-01.svg",
+      "asset": "heaven-01.svg?v=20261118",
       "count": "06"
     },
     {
@@ -41,7 +41,7 @@ window.SILK_DATA={
       "observation": "门阙、人物与守护形象围合出一个向内的入口。水平基座与垂直门柱构成稳定的对称结构。",
       "tags": "门阙 · 对称 · 守护",
       "translation": "以竖向门柱建立版面边界，让中心留白成为视觉入口。",
-      "asset": "heaven-02.svg"
+      "asset": "heaven-02.svg?v=20261118"
     },
     {
       "id": "h02",
@@ -74,7 +74,7 @@ window.SILK_DATA={
       "observation": "圆形日轮与枝状结构形成纵向节奏，鸟形置于日轮之中。圆点、曲线和分叉结构交织。",
       "tags": "日轮 · 鸟形 · 生长",
       "translation": "将圆形与枝状结构组合成纵向模块，用于长幅画面与书签。",
-      "asset": "heaven-05.svg"
+      "asset": "heaven-05.svg?v=20261118"
     },
     {
       "id": "h05",
